@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(0,0,0,0.8);
+  background: radial-gradient(circle, rgba(64, 49, 78, 0.9), rgba(101, 91, 129, 0.8), rgba(128, 128, 128, 0.6), rgba(46, 61, 74, 0.7), rgba(67, 89, 107, 0.5), rgba(18, 24, 30, 0.9));
+  overflow: hidden;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Arial Rounded MT Bold',sans-serif;
+  margin: 2% auto;
+  background-color: rgba(220,220,220,0.8);
+  padding:  1% 10%;
+  font-size: 60px;
+}
+
+main {
+  background-color: rgba(220,220,220,0.8);
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+}
+
+h2,time{
+  font-family: 'klee',sans-serif;
+  font-size: 30px;
+}
+
+.flag {
+  width: 100%;
+  font-size: 60px;
+  background-color: rgba(220,220,220,0.8);
+}
+.flag:hover {
+  background-color: rgba(255,255,255,0.7);
+}
+
+footer {
+  background-color: rgba(220,220,220,0.8);
+  margin: 2% auto;
+}
+
+input {
+  background-color: rgba(220,220,220,0.8);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

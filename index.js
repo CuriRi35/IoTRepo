@@ -1,14 +1,19 @@
-const buttons = document.querySelectorAll('.flag');
-buttons.forEach(function(button) {
-  button.addEventListener('click', function() {
-    if (button.value === '空き') {
-      button.value = '使用中';
-      button.style.color = 'white';
-      button.style.backgroundColor = 'red';
-    } else {
-      button.value = '空き';
-      button.style.color = 'black';
-      button.style.backgroundColor = 'rgba(220,220,220,0.6)';
-    }
-  });
+const submit = document.querySelector('.submit');
+const aside = document.querySelector('aside');
+const button = document.querySelector('button');
+    let isClicked = false;
+
+    aside.addEventListener('click', () => {
+      if (isClicked) {
+        aside.classList.remove('show');
+        submit.innerHTML = '絶対にボタン&#33;<br/><span>押すな</span>';
+        aside.style.backgroundColor = '#FF0000';
+        aside.style.color = '#000000';
+      } else {
+        aside.classList.add('show');
+        submit.innerHTML = '<span>入室中&#33;</span>';
+        aside.style.backgroundColor = '#800080	';
+        aside.style.color = '#FFFFFF';
+      }
+      isClicked = !isClicked;
 });

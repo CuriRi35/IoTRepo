@@ -17,21 +17,34 @@ header {
 
 h1 {
   font-family: 'Arial Rounded MT Bold',sans-serif;
-  margin: 2% auto;
+  margin: 0 auto;
   background-color: rgba(220,220,220,0.8);
   padding:  1% 10%;
   font-size: 60px;
 }
 
 main {
-  background-color: rgba(220,220,220,0.8);
+  /* background-color: rgba(220,220,220,0.8); */
+  display: flex;
+  padding: 0 10%;
 }
 
-article {
+/* article {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20%;
+} */
+
+.company {
+  background-color: rgba(220,220,220,0.8);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* margin: 0 auto; */
 }
 
 h2,time{
@@ -48,14 +61,41 @@ h2,time{
   background-color: rgba(255,255,255,0.7);
 }
 
-footer {
-  background-color: rgba(220,220,220,0.8);
-  margin: 2% auto;
+
+.button {
+  width: 100%;
+  height: auto;  
+  margin: 1% 5%;
+  padding: 1%;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(255, 255, 255, 0.4);
+  background: radial-gradient(circle, rgba(64, 49, 78, 0.9), rgba(101, 91, 129, 0.8), rgba(128, 128, 128, 0.6), rgba(46, 61, 74, 0.7), rgba(67, 89, 107, 0.5), rgba(18, 24, 30, 0.9));
+  border-radius: 20px;
 }
 
-input {
-  background-color: rgba(220,220,220,0.8);
-  border: none;
-  cursor: pointer;
+aside {
+  width: 500px;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: red;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(255, 255, 255, 0.4);
+  margin: 1% auto;
+  border: 1px;
+  border-radius: 50%;
   transition: background-color 0.3s ease;
+}
+
+aside.show {
+  border-radius: 20%;
+}
+
+.submit {
+  font-size: 5vw;
+}
+
+span {
+  font-weight: bold;
+  font-size: 6vw;
 }

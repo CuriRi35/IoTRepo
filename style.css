@@ -61,11 +61,10 @@ h2,time{
   background-color: rgba(255,255,255,0.7);
 }
 
-
 .button {
   width: 100%;
   height: auto;
-  margin: 8% 5%;
+  margin: 12% 5%;
   padding: 1%;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(255, 255, 255, 0.4);
   background: radial-gradient(circle, rgba(64, 49, 78, 0.9), rgba(101, 91, 129, 0.8), rgba(128, 128, 128, 0.6), rgba(46, 61, 74, 0.7), rgba(67, 89, 107, 0.5), rgba(18, 24, 30, 0.9));

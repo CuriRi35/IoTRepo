@@ -6,7 +6,7 @@ const button = document.querySelector('button');
     aside.addEventListener('click', () => {
       if (isClicked) {
         aside.classList.remove('show');
-        submit.innerHTML = '絶対にボタン&#33;<br/><span>押すな</span>';
+        submit.innerHTML = '絶対にボタン&#33;<br/><span>押して..</span>';
         aside.style.backgroundColor = '#FF0000';
         aside.style.color = '#000000';
       } else {

@@ -84,6 +84,7 @@ aside {
   border: 1px;
   border-radius: 50%;
   transition: background-color 0.3s ease;
+  user-select: none;
 }
 
 aside.show {
